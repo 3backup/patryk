@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .badge {
+        width: 100%;
+        height: 80px;
+        position: sticky;
+        left: 0;
+        right: 0;
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        backdrop-filter: saturate(180%) blur(20px);
+        background-color: hsla(0, 0%, 100%, 0.65);
+        top: 0;
+      }
+      .iframe {
+        width: 100%;
+        height: 100vh;
+      }
+      .iframe__logo {
+        max-height: 60px;
+        margin: 0 auto;
+      }
+      .iframe__container {
+        width: 960px;
+        display: flex;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="badge">
+      <div class="iframe__container">
+        <button>Wroć do szczepanikov.pl</button>
+        <img class="iframe__logo" src="logo-patryk@4x.png" alt="" />
+        <h3>Kup moją pierwszą płyte - "Pierwsza" od 44,99</h3>
+      </div>
+    </div>
+    <iframe
+      class="iframe"
+      src="https://popcornrecords.pl/produkt/patryk-szczepanik-pierwsza-fan-box-preorder/?fbclid=IwAR3DVt7JbzhGtgtqcwaCNvSlyMWGtPx6GHVE-GNWCgnxh0LMEtvkRTkeSrM"
+      frameborder="0"
+    ></iframe>
+  </body>
+</html>
